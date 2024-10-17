@@ -1,0 +1,75 @@
+/* Layout */
+/* Mengatur desain header */
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: #cbc9d1ac;
+    color: #280872;
+    padding: 15px 20px;
+    font-size: 20px;
+}
+    /* Mengatur lebar menu 20% dengan background hitam */
+    aside{
+    margin:0;
+    flex: 20%;
+    background: #222;
+    width: 300px;
+    /* float: right;  */
+    /* position: relative; */
+    /* background-color: #f71616; */
+ 
+    }
+    /* Mengatur lebar konten utama 80% dengan background putih */
+    section.main{
+    flex:80%;
+    background: #fff;
+    min-height: 530px ;
+    padding: 15px 20px;
+    flex-grow: 1;
+    /* background-color: #555; */
+    }
+    /* Mengatur footer dengan background abu-abu dan teks di tengah */
+    footer{
+    background: #eaeaea;
+    color: #f71616;
+    padding: 15px;
+    text-align: center;
+   
+    }
+    .container{
+        /* flex-direction: column;  */
+        display: flex;
+        flex-direction: row-reverse;
+    /* Mengatur layout pada layar kecil (responsive) */
+    /* @media (max-width: 700px){
+    
+    } */
+    }
+    /* Navigasi */
+    /* Membuang padding tag <ul> */
+    .menu{
+    margin: 0 8%;
+    padding: 0;
+    
+    }
+    /* Menambah border bawah tag <li> */
+    .menu li{
+    border-bottom: 1px solid#fffafa;
+    /* width: 80%; */
+    list-style-type: none;
+    }
+    /* Mengatur desain menu yang dibuat dengan tag a */
+    .menu a{
+    display: block;
+    padding: 20px 20px;
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    }
+    /* Mengganti background menu ketika ditunjuk mouse */
+    .menu a:hover{
+    background: #000;
+    }
+   

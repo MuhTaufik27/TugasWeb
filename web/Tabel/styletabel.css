@@ -1,0 +1,137 @@
+/* Layout */
+/* Mengatur desain header */
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: #cbc9d1ac;
+    color: #000000;
+    padding: 15px 20px;
+    font-size: 20px;
+}
+    /* Mengatur lebar menu 20% dengan background hitam */
+    aside{
+    margin:0;
+    flex: 20%;
+    background: #222;
+    width: 300px;
+    /* float: right;  */
+    /* position: relative; */
+    /* background-color: #f71616; */
+ 
+    }
+    /* Mengatur lebar konten utama 80% dengan background putih */
+    section.main{
+    flex:80%;
+    background: #fff;
+    min-height: 530px ;
+    padding: 15px 20px;
+    flex-grow: 1;
+    /* background-color: #555; */
+    }
+    /* Mengatur footer dengan background abu-abu dan teks di tengah */
+    footer{
+    background: #eaeaea;
+    color: #f71616;
+    padding: 15px;
+    text-align: center;
+   
+    }
+    .container{
+        /* flex-direction: column;  */
+        display: flex;
+        flex-direction: row-reverse;
+    /* Mengatur layout pada layar kecil (responsive) */
+    /* @media (max-width: 700px){
+    
+    } */
+    }
+    /* Navigasi */
+    /* Membuang padding tag <ul> */
+    .menu{
+    margin: 0 8%;
+    padding: 0;
+    
+    }
+    /* Menambah border bawah tag <li> */
+    .menu li{
+    border-bottom: 1px solid#fffafa;
+    /* width: 80%; */
+    list-style-type: none;
+    }
+    /* Mengatur desain menu yang dibuat dengan tag a */
+    .menu a{
+    display: block;
+    padding: 20px 20px;
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    }
+    /* Mengganti background menu ketika ditunjuk mouse */
+    .menu a:hover{
+    background: #000;
+    }
+   
+
+    /* Tabel */
+/* Mengatur desain judul halaman dengan border di bawah */
+.judul{
+    color: #555;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    }
+    /* Mengatur agar lebar tabel penuh dan antara border tidak memiliki jarak */
+    .table{
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    }
+    
+    /* Menambahkan border dan padding pada sel tabel */
+    .table th, .table td{
+    border: 3px solid #ccc;
+    padding: 20px 0px ;
+    text-align: center;
+   
+    /* width: 10px; */
+    }
+    
+    /* Mengatur background bagian judul tabel*/
+    .table th{
+    background: #eee;
+    }
+    /* Mengatur desain tombol yang dibuat dengan tag <a> */
+    .tombol{
+    display: inline-block;
+    max-width: 150px;
+    padding: 15px 30px;
+    color: #038ade;
+    text-decoration: none;
+    background-color: #fff;
+    border:1px solid #038ade;
+    cursor: pointer;
+    border-radius: 10px;
+    }
+    .tombol:hover{
+        color: #fff;
+        background: #038ade;
+    }
+    /* Desain tombol edit dan hapus agar lebih kecil*/
+    .tombol.edit, .tombol.hapus{
+    padding: 10px 15px;
+    font-size: 12px;
+    }
+    .tombol.hapus{
+    color: #fc4c4c;
+    background-color: #fff;
+    border: 1px solid  #fc4c4c;
+    }
+    .tombol.hapus:hover{
+        background: #fc4c4c;
+        color: #fff;
+    }
+    .table th, .table td img{
+        width: 80px;
+    }
+

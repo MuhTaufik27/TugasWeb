@@ -1,0 +1,163 @@
+/* Layout */
+/* Mengatur desain header */
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: #cbc9d1ac;
+    color: #000000;
+    padding: 15px 20px;
+    font-size: 20px;
+}
+    /* Mengatur lebar menu 20% dengan background hitam */
+    aside{
+    margin:0;
+    flex: 20%;
+    background: #222;
+    width: 300px;
+    /* float: right;  */
+    /* position: relative; */
+    /* background-color: #f71616; */
+ 
+    }
+    /* Mengatur lebar konten utama 80% dengan background putih */
+    section.main{
+    flex:80%;
+    background: #fff;
+    min-height: 530px ;
+    padding: 15px 20px;
+    flex-grow: 1;
+    /* background-color: #555; */
+    }
+    /* Mengatur footer dengan background abu-abu dan teks di tengah */
+    footer{
+    background: #eaeaea;
+    color: #f71616;
+    padding: 15px;
+    text-align: center;
+   
+    }
+    .container{
+        /* flex-direction: column;  */
+        display: flex;
+        flex-direction: row-reverse;
+    /* Mengatur layout pada layar kecil (responsive) */
+    /* @media (max-width: 700px){
+    
+    } */
+    }
+    /* Navigasi */
+    /* Membuang padding tag <ul> */
+    .menu{
+    margin: 0 8%;
+    padding: 0;
+    
+    }
+    /* Menambah border bawah tag <li> */
+    .menu li{
+    border-bottom: 1px solid#fffafa;
+    /* width: 80%; */
+    list-style-type: none;
+    }
+    /* Mengatur desain menu yang dibuat dengan tag a */
+    .menu a{
+    display: block;
+    padding: 20px 20px;
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    }
+    /* Mengganti background menu ketika ditunjuk mouse */
+    .menu a:hover{
+    background: #000;
+    }
+
+/* Halaman Form */
+/* Mengatur form-group agar tidak terpengaruh float */
+.form-group{
+    clear:both;
+    }
+    /* Mengatur lebar label 30% dengan teks bold */
+    .form-group label{
+    display: block;
+    padding: 15px 0;
+    float: left;
+    width : 15%;
+    font-weight: bold;
+    border-right:1px dotted #222;
+    margin: 10px 5px 0px 10px;
+   
+    }
+    /* Mengatur lebar .input 50% dan sejajar dengan label */
+    .form-group .input{
+        
+        /* border: 3px solid #cbc9d1ac; */
+    display: block;
+    height: 50px;
+    width: 30%;
+    float: left;
+    margin: 10px 0px;
+    }
+  
+    /* Mengatur input radio, tombol submit dan tombol reset*/
+    input[type=radio]{
+    width: 20px;
+    padding-top: 30px;
+    }
+    input[type="file"]{
+        width: 200px; /* Atur ukuran sesuai kebutuhan */
+        height: 45px; /* Tinggi kotak input */
+        
+        font-size: 13px; /* Mengatur ukuran font */
+        border: 1px solid #cbc9d1ac;
+        margin-left: 20px;
+    }
+    input[type="text"], input[type="date"], select {
+        width: 200px; /* Atur ukuran sesuai kebutuhan */
+        height: 45px; /* Tinggi kotak input */
+        padding: 0px; /* Memberikan ruang di dalam kotak input */
+        font-size: 13px; /* Mengatur ukuran font */
+        margin-left: 20px;
+    }
+    .tombol.simpan{
+    border-radius:10px ; 
+    margin:0px 10px;   
+    width: 100px;
+    height: 50px;
+    color: #038ade;
+    border-color: #038ade;    
+    }
+    .tombol.simpan:hover{
+        background-color: #038ade;
+        color: #fff;
+    }
+    .tombol.reset{
+    width: 100px;
+    height: 50px;
+     color: #fc4c4c;
+     border-radius: 10px;
+     border-color: #fc4c4c;
+    }
+    .tombol.reset:hover{
+        background-color: #fc4c4c;
+        
+        color: #fff;
+    }
+    /* Memebuat tampilan form menumpuk pada layar kecil */
+    @media (max-width: 700px) {
+    .form-group label, .form-group .input{
+    width: 100%;
+    }
+    }
+    .judul{
+        height: 30px;
+        text-align: center;
+      border-bottom: 3px solid #cbc9d1ac;
+    }
+    /* .main{
+        margin: 0% 50px;
+    } */
+    .main .center{
+        padding-left: 35%;
+    }
